@@ -1,7 +1,7 @@
 # Projeto: Tennis Mathers
 
 Respositorio do Projeto de Matematica Computacional - Tennis Mathers
-*Integrantes:
+* Integrantes:
  - Renan
  - Thiago 
  - Henrique Nagy
