@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgnxaq4bqip32"]
+
+[ext_resource type="Script" uid="uid://yp1cp8yymcg4" path="res://bola.gd" id="1_6ycda"]
+[ext_resource type="Texture2D" uid="uid://80016ca8k6pm" path="res://SPRITES/Sprites gerais/bola_tenis.png" id="2_ye40b"]
+
+[sub_resource type="GDScript" id="GDScript_8rvdd"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_l11qx"]
+bounce = 0.8
+script = SubResource("GDScript_8rvdd")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t7d5g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6ycda"]
+
+[node name="bola" type="RigidBody2D" groups=["bola"]]
+collision_layer = 4
+collision_mask = 33
+mass = 0.001
+physics_material_override = SubResource("PhysicsMaterial_l11qx")
+script = ExtResource("1_6ycda")
+
+[node name="colisao" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t7d5g")
+
+[node name="sprite" type="Sprite2D" parent="."]
+position = Vector2(-1.71661e-05, 0.999987)
+scale = Vector2(0.0570834, 0.0570834)
+texture = ExtResource("2_ye40b")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_6ycda")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
