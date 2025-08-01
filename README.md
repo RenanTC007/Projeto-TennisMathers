@@ -6,4 +6,4 @@ Respositorio do Projeto de Matematica Computacional - Tennis Mathers
    - Thiago
    - Henrique Nagy
    - Matheus Barbosa
-   - Mirela
+   - Mirella
