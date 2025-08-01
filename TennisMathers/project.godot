@@ -13,7 +13,7 @@ config_version=5
 config/name="TennisMathers01/07"
 run/main_scene="uid://b32f31pix8ir3"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://SPRITES/Sprites gerais/icon.svg"
+config/icon="res://assets/sprites/Sprites gerais/icon.svg"
 
 [global_group]
 
